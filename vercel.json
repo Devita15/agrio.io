@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "chatApp/wsgi.py"
+        "dest": "chatApp.server"
       }
     ]
   }
