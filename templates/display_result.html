@@ -1,0 +1,44 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+	Classification
+{% endblock title %}
+
+{% block content %}
+
+<head>
+	<style>
+	.center {
+	  line-height: 200px;
+	  height: 60px;
+	  border: 3px solid rgb(13, 90, 13);
+	  text-align: center;
+	}
+	
+	.center p {
+	  line-height: 1.5;
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+	</style>
+	</head>
+	
+<h1 class="heading" style="text-align: center;"> Result of classification of uploaded image using Neural Network </h1><hr class="hr">
+
+				<div class="col-md-50">
+					<br>
+					<img src="{{ input_image.url }}" class="img-responsive" style="width: 25%;height: 10%; float: left; margin-right: 20px;margin-left: 30px;" />
+					<br><br>
+					<h1 style="color :#7d0303;"><b><i> {{ result }} </i></b></h1>
+					<h1 style="color :#0b4e2f;"><b><u> Accuracy </u>  : <i> {{ accuracy }} %</i></b></h1>
+					<h1 style="color :#37078b;"><b><u> Time to get result </u>  : <i> {{ time2execute }} seconds</i></b></h1>
+					<br><br><br><br>
+					<h1 style="color :#3c0732; text-align: justify;"><b><i> {{ precautionary_measure }} </i></b></h1>
+				</div> 
+
+				<br>
+
+
+
+{% endblock content %}

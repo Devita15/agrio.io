@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+		    <!-- <h1 class="heading" style="text-align: center;">Welcome , {{ user }}!</h1><br><hr class="hr"><br><br> -->
+			<h1> <b> Welcome to Grape Leaf Detection Using Deep Learning, {{ user }} . ! </b> </h1>
+
+			<br>
+			<br>
+			<body> 
+				<form method = "post" enctype="multipart/form-data"> 
+                {% csrf_token %} 
+                {{ form.as_p }} 				
+
+				<br>
+                <button type="submit"  class="btn btn-lg btn-outline-danger">Upload Image</button> 
+				</form> 
+				</body> 
+
+{% endblock content %}

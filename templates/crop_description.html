@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% load static %} {% block title %} Crop Description
+{% endblock title %} {% block content %}
+<div class="row justify-content-center mt-5">
+  <div class="col-md-5">
+    <h2>Crop Description</h2>
+    <p>{{ crop_array }}</p>
+  </div>
+</div>
+<div class="row">
+  {% for crop in crop_array %}
+
+  <div class="cards">
+    <a class="cards__item" href="https://plantix.net/en/library/plant-diseases/600022/leaf-miner-flies">
+      <div class="card">
+        <img class="card__image" src="https://unsplash.it/800/600?image=59" />
+
+        <div class="card__content">
+          <div class="card__title">Flex</div>
+          <p class="card__text">
+            This is the shorthand for flex-grow, flex-shrink and flex-basis
+            combined. The second and third parameters (flex-shrink and
+            flex-basis) are optional. Default is 0 1 auto.
+          </p>
+          <button class="btn btn--block card__btn">Button</button>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}

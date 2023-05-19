@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+		<br>
+		<br>		
+		<br>
+		<br>
+		
+	<div class="row justify-content-center ">
+			<div class="text-center">
+					<br>
+					{% if not user.is_authenticated %}
+						<h1> <b> Grape Leaf Detection Using Deep Learning </b> </h1>
+					{% else %}
+						<h1> <b> Welcome to Grape Leaf Detection Using Deep Learning, {{ user }} . ! </b> </h1>
+					{% endif %}
+
+					<br>
+					 <br>
+				<p style="text-align:justify;" >
+	
+					<b>
+
+						Grapes are basically a tropical plant with excellent pulp, rich color and very beneficial health. In general, it is timeconsuming and difficult for farmers in remote areas to diagnose grapevine diseases due to the unavailability of specialists. Although experts are located in some areas, diagnostic tests are performed with the naked eye resulting in misdiagnosis. The default system can alleviate these problems. The disease on the grape plant usually starts on the leaf and then spreads to the stem, root and fruit. When the disease reaches the fruit the whole plant is destroyed. The procedure is to detect the disease in the leaf itself to save the fruit.
+						Rapid and accurate grape leaf disease diagnosis is of great significance to its yield and quality of grape. In this project, aiming at the identification of grape leaf diseases.
+						
+					</b>
+			
+			
+			</div>
+		</div>
+	
+			
+
+		
+			
+{% endblock content %}
